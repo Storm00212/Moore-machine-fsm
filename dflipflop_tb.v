@@ -7,24 +7,24 @@ module fsm_tb;
     reg x;
     wire z;
 
-    // ==============================
+    
     // CHANGE MODULE NAME HERE
-    // ==============================
-    moore_d uut (        // <- change this line if needed
+    
+    moore_d uut (        
         .clk(clk),
         .reset(reset),
         .x(x),
         .z(z)
     );
 
-    // ==============================
+    
     // CLOCK GENERATION
-    // ==============================
+    
     always #5 clk = ~clk;   // 10 ns clock period
 
-    // ==============================
+    
     // TEST SEQUENCE
-    // ==============================
+    
     initial begin
         $dumpfile("fsm.vcd");
         $dumpvars(0, fsm_tb);
