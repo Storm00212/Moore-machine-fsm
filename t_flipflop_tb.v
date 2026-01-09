@@ -12,8 +12,8 @@ module fsm_tb;
 
     moore_t uut(
         .clk(clk),
-        .reset(reset)
-        .x(x)
+        .reset(reset),
+        .x(x),
         .z(z)
     );
 
