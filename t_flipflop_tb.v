@@ -10,7 +10,7 @@ module fsm_tb;
 
     //module
 
-    moore_d uut(
+    moore_t uut(
         .clk(clk)
         .reset(reset)
         .x(x)
