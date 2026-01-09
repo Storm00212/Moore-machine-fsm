@@ -1,4 +1,4 @@
-'timescale 1ns/1ps
+`timescale 1ns/1ps
 
 module fsm_tb;
     
@@ -11,7 +11,7 @@ module fsm_tb;
     //module
 
     moore_t uut(
-        .clk(clk)
+        .clk(clk),
         .reset(reset)
         .x(x)
         .z(z)
