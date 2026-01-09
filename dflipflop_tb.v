@@ -26,7 +26,7 @@ module fsm_tb;
     // TEST SEQUENCE
     
     initial begin
-        $dumpfile("fsm.vcd");
+        $dumpfile("dfsm.vcd");
         $dumpvars(0, fsm_tb);
 
         // Initialize
